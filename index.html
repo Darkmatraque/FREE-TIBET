@@ -3,29 +3,158 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Free Tibet</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <title>Free Tibet – Accueil</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="about.html">Histoire</a>
-      <a href="actions.html">Agir</a>
-      <a href="resources.html">Ressources</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">༄</span>
+        <span class="logo-text">Free Tibet</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="active">Accueil</a>
+        <a href="about.html">Histoire</a>
+        <a href="actions.html">Agir</a>
+        <a href="resources.html">Ressources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">☀︎</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        ☰
+      </button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Free Tibet</h1>
-      <p>Informer, sensibiliser, agir pour la liberté du Tibet.</p>
-      <a class="cta" href="actions.html">Comment agir</a>
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1>Free Tibet</h1>
+        <p>
+          Informer, sensibiliser et agir pour la défense des droits humains,
+          la préservation de la culture tibétaine et la liberté de conscience.
+        </p>
+        <div class="hero-actions">
+          <a href="actions.html" class="btn primary">Comment agir</a>
+          <a href="about.html" class="btn ghost">Comprendre la situation</a>
+        </div>
+        <p class="hero-note">
+          Ce site est informatif et militant, basé sur des sources publiques
+          et une approche non violente.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Le Tibet en quelques mots</h2>
+        <p>
+          Région de haute altitude au cœur de l’Himalaya, le Tibet possède une
+          histoire, une langue et une spiritualité uniques, fortement liées au
+          bouddhisme tibétain.
+        </p>
+      </div>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Géographie</h3>
+          <p>
+            Le Tibet est souvent appelé le “toit du monde”, avec des plateaux
+            situés à plus de 4 000 mètres d’altitude et des montagnes parmi les
+            plus hautes de la planète.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Culture</h3>
+          <p>
+            La culture tibétaine est marquée par les monastères, les prières,
+            les drapeaux de prières colorés, la musique traditionnelle et une
+            riche tradition littéraire et philosophique.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Spiritualité</h3>
+          <p>
+            Le bouddhisme tibétain joue un rôle central, avec des figures
+            importantes comme le Dalaï-Lama et d’autres maîtres spirituels.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-header">
+        <h2>Pourquoi parler de “Free Tibet” ?</h2>
+        <p>
+          Le terme “Free Tibet” est utilisé par des mouvements et organisations
+          qui souhaitent défendre les droits humains, la liberté religieuse et
+          la préservation de la culture tibétaine. Les points de vue politiques
+          peuvent varier, mais ce site se concentre sur la non-violence et le
+          respect de la dignité humaine.
+        </p>
+      </div>
+      <div class="grid-2">
+        <article class="card">
+          <h3>Droits humains</h3>
+          <p>
+            Des organisations internationales publient des rapports sur la
+            situation des droits humains au Tibet, incluant la liberté
+            d’expression, la liberté religieuse et la protection de la culture.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Préservation culturelle</h3>
+          <p>
+            La langue tibétaine, les traditions artistiques, les monastères et
+            les pratiques spirituelles sont au cœur des préoccupations de
+            nombreuses associations et communautés tibétaines.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>Ce que tu peux faire</h2>
+        <p>
+          Même à distance, il est possible de s’informer, de soutenir des
+          organisations, de participer à des événements et de partager des
+          ressources sérieuses.
+        </p>
+      </div>
+      <div class="grid-4">
+        <article class="card small">
+          <h3>S’informer</h3>
+          <p>Lire des rapports, des articles et des analyses de sources fiables.</p>
+          <a href="resources.html" class="link">Voir les ressources</a>
+        </article>
+        <article class="card small">
+          <h3>Soutenir</h3>
+          <p>Soutenir des ONG et associations qui travaillent sur le terrain.</p>
+          <a href="actions.html" class="link">Découvrir comment agir</a>
+        </article>
+        <article class="card small">
+          <h3>Participer</h3>
+          <p>Rejoindre des événements, conférences ou campagnes de sensibilisation.</p>
+          <a href="actions.html#evenements" class="link">Voir les idées</a>
+        </article>
+        <article class="card small">
+          <h3>Partager</h3>
+          <p>Diffuser des informations vérifiées et encourager un débat respectueux.</p>
+          <a href="faq.html" class="link">FAQ & conseils</a>
+        </article>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Site militant indépendant – Free Tibet.</p>
+  <footer class="site-footer">
+    <p>
+      Site militant indépendant – Free Tibet.  
+      Approche non violente, respectueuse et basée sur des sources publiques.
+    </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
