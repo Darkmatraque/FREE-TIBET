@@ -1,0 +1,139 @@
+/* =========================================================
+   THEME TIBET — Couleurs, motifs, ambiance Himalaya
+   ========================================================= */
+
+/* Palette tibétaine inspirée du drapeau et des temples */
+:root {
+  --tibet-red: #d62828;
+  --tibet-yellow: #f7d44c;
+  --tibet-blue: #005bbb;
+  --tibet-white: #f2f2f2;
+  --tibet-green: #2a9d8f;
+
+  --bg: #faf7f2; /* beige clair façon papier tibétain */
+  --bg-alt: #fffdf8;
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+
+  --radius: 14px;
+  --max-width: 960px;
+
+  --font-main: "Inter", "Roboto", system-ui, sans-serif;
+  --font-title: "Noto Serif Tibetan", "Merriweather", serif;
+}
+
+/* ---------- Texture Himalaya ---------- */
+
+body {
+  background: 
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Himalayas.jpg/1920px-Himalayas.jpg")
+    center/cover fixed,
+    linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+  background-blend-mode: lighten;
+}
+
+/* ---------- Motif nuages tibétains ---------- */
+
+.cloud-pattern {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/1/1a/Tibetan_clouds_pattern.png")
+              repeat;
+  opacity: 0.08;
+}
+
+/* ---------- Titres façon calligraphie tibétaine ---------- */
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+  letter-spacing: 0.5px;
+  color: var(--tibet-blue);
+}
+
+/* ---------- Encadrés style temple tibétain ---------- */
+
+.card {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 2px solid var(--tibet-yellow);
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    var(--tibet-red),
+    var(--tibet-yellow),
+    var(--tibet-blue),
+    var(--tibet-green)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* ---------- Boutons drapeaux de prières ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    var(--tibet-blue),
+    var(--tibet-white),
+    var(--tibet-red),
+    var(--tibet-green),
+    var(--tibet-yellow)
+  );
+  background-size: 300%;
+  transition: background-position 0.4s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-position: 100%;
+  transform: translateY(-2px);
+}
+
+/* ---------- Sections avec mandala ---------- */
+
+.section-mandala {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Tibetan_mandala.png")
+              center/contain no-repeat;
+  padding: 3rem 1rem;
+  opacity: 0.12;
+}
+
+/* ---------- Thème sombre tibétain ---------- */
+
+:root.dark {
+  --bg: #0f0f14;
+  --bg-alt: #1a1a22;
+  --text: #f2f2f2;
+  --muted: #bdbdbd;
+
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+:root.dark body {
+  background: 
+    url("https://upload.wikimedia.org/wikipedia/commons/1/12/Himalayas.jpg")
+    center/cover fixed,
+    linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.85));
+  background-blend-mode: multiply;
+}
+
+:root.dark h1, :root.dark h2 {
+  color: var(--tibet-yellow);
+}
