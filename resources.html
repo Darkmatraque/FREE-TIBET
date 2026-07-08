@@ -4,63 +4,95 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Free Tibet – Ressources</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="about.html">Histoire</a>
-      <a href="actions.html">Agir</a>
-      <a href="resources.html" class="active">Ressources</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">༄</span>
+        <span class="logo-text">Free Tibet</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">Histoire</a>
+        <a href="actions.html">Agir</a>
+        <a href="resources.html" class="active">Ressources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">☀︎</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        ☰
+      </button>
+    </div>
   </header>
 
-  <main class="page">
-    <h1>Ressources pour en savoir plus</h1>
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1>Ressources pour en savoir plus</h1>
+        <p>
+          Cette page propose des pistes pour trouver des informations
+          supplémentaires sur le Tibet, les droits humains et la culture
+          tibétaine. Tu peux y ajouter tes propres liens.
+        </p>
+      </div>
 
-    <section>
-      <h2>Organisations & ONG</h2>
-      <ul class="links">
-        <li>
-          <strong>Organisations de défense des droits humains :</strong>
-          rechercher des ONG reconnues qui publient des rapports sur le Tibet.
-        </li>
-        <li>
-          <strong>Associations tibétaines en exil :</strong>
-          certaines proposent des événements, conférences et contenus éducatifs.
-        </li>
-      </ul>
-    </section>
+      <article class="card">
+        <h2>Organisations & ONG</h2>
+        <ul class="links">
+          <li>
+            <strong>Organisations de défense des droits humains :</strong>
+            consulter des ONG reconnues qui publient des rapports sur la
+            situation au Tibet.
+          </li>
+          <li>
+            <strong>Institutions internationales :</strong>
+            certaines institutions publient des analyses et des rapports
+            sur les droits humains et la liberté religieuse.
+          </li>
+          <li>
+            <strong>Associations tibétaines en exil :</strong>
+            elles organisent des événements, des conférences et des
+            activités culturelles.
+          </li>
+        </ul>
+      </article>
 
-    <section>
-      <h2>Articles & rapports</h2>
-      <p>
-        Tu peux ajouter ici des liens vers des articles, rapports officiels,
-        documentaires, podcasts, etc. Essaie de privilégier des sources
-        variées et crédibles.
-      </p>
-      <ul class="links">
-        <li>Rapports sur les droits humains (ONG, institutions internationales).</li>
-        <li>Analyses historiques et géopolitiques sur le Tibet.</li>
-        <li>Documentaires vidéo sur la culture tibétaine.</li>
-      </ul>
-    </section>
+      <article class="card">
+        <h2>Articles & rapports</h2>
+        <p>
+          Tu peux ajouter ici des liens vers des articles, des rapports
+          officiels, des analyses universitaires et des documentaires.
+        </p>
+        <ul class="links">
+          <li>Rapports sur les droits humains (ONG, institutions).</li>
+          <li>Analyses historiques et géopolitiques sur le Tibet.</li>
+          <li>Documentaires vidéo sur la culture et la spiritualité tibétaine.</li>
+        </ul>
+      </article>
 
-    <section>
-      <h2>Contact</h2>
-      <p>
-        Tu peux ajouter une adresse e-mail de contact ou un lien vers tes
-        réseaux sociaux pour que les gens puissent te joindre.
-      </p>
-      <p>
-        Exemple : <a href="mailto:contact@freetibet.example">contact@freetibet.example</a>
-      </p>
+      <article class="card">
+        <h2>Culture & langue</h2>
+        <p>
+          La culture tibétaine est riche et variée. Tu peux ajouter des
+          ressources sur :
+        </p>
+        <ul class="links">
+          <li>Apprentissage de la langue tibétaine.</li>
+          <li>Musique traditionnelle et chants sacrés.</li>
+          <li>Art tibétain (thangkas, mandalas, sculptures).</li>
+        </ul>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>Free Tibet – Ressources publiques, à vérifier et croiser.</p>
+  <footer class="site-footer">
+    <p>
+      Free Tibet – Ressources publiques, à croiser et vérifier.
+    </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
