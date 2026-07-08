@@ -3,62 +3,123 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Free Tibet – Histoire</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <title>Free Tibet – Histoire du Tibet</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="about.html" class="active">Histoire</a>
-      <a href="actions.html">Agir</a>
-      <a href="resources.html">Ressources</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">༄</span>
+        <span class="logo-text">Free Tibet</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="active">Histoire</a>
+        <a href="actions.html">Agir</a>
+        <a href="resources.html">Ressources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">☀︎</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        ☰
+      </button>
+    </div>
   </header>
 
-  <main class="page">
-    <h1>Histoire du Tibet</h1>
-    <p>
-      Le Tibet est une région d’Asie au cœur de l’Himalaya, avec une culture,
-      une langue et une spiritualité uniques, fortement liées au bouddhisme tibétain.
-    </p>
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1>Histoire du Tibet</h1>
+        <p>
+          Le Tibet possède une histoire complexe, avec des périodes d’indépendance,
+          d’influence religieuse forte et des relations variées avec ses voisins.
+          Cette page propose une vue d’ensemble simplifiée.
+        </p>
+      </div>
 
-    <section>
-      <h2>Chronologie simplifiée</h2>
-      <ul class="timeline">
-        <li>
-          <strong>Avant le XXe siècle :</strong>
-          Le Tibet fonctionne comme un État avec une forte influence religieuse.
-        </li>
-        <li>
-          <strong>Années 1950 :</strong>
-          Intégration du Tibet à la Chine, tensions politiques et sociales.
-        </li>
-        <li>
-          <strong>1959 :</strong>
-          Soulèvement au Tibet, exil du Dalaï-Lama en Inde.
-        </li>
-        <li>
-          <strong>Aujourd’hui :</strong>
-          Débats internationaux sur les droits humains, la liberté religieuse
-          et la préservation de la culture tibétaine.
-        </li>
-      </ul>
-    </section>
+      <article class="card">
+        <h2>Origines et développement historique</h2>
+        <p>
+          Pendant des siècles, le Tibet a fonctionné comme une entité politique
+          et culturelle distincte, avec des rois, des monastères et une
+          organisation sociale fortement influencée par le bouddhisme.
+        </p>
+        <p>
+          La religion et le pouvoir politique étaient souvent liés, les
+          monastères jouant un rôle central dans l’éducation, la culture et
+          l’administration.
+        </p>
+      </article>
 
-    <section>
-      <h2>Pourquoi “Free Tibet” ?</h2>
-      <p>
-        Le mouvement “Free Tibet” vise à informer, défendre les droits humains
-        et soutenir la préservation de la culture tibétaine. Il existe
-        différentes opinions politiques sur la situation, mais ce site
-        se concentre sur la défense des droits fondamentaux et la non-violence.
-      </p>
+      <article class="card">
+        <h2>Chronologie simplifiée</h2>
+        <ul class="timeline">
+          <li>
+            <strong>Avant le XXe siècle :</strong>
+            Le Tibet est gouverné par des structures religieuses et politiques
+            locales, avec une forte autonomie.
+          </li>
+          <li>
+            <strong>Début du XXe siècle :</strong>
+            Le Tibet entretient des relations diplomatiques avec plusieurs pays
+            et tente de préserver son autonomie.
+          </li>
+          <li>
+            <strong>Années 1950 :</strong>
+            Intégration du Tibet à la Chine, avec des changements politiques
+            majeurs et des tensions.
+          </li>
+          <li>
+            <strong>1959 :</strong>
+            Soulèvement au Tibet, exil du Dalaï-Lama en Inde, création
+            d’institutions tibétaines en exil.
+          </li>
+          <li>
+            <strong>Depuis :</strong>
+            Débats internationaux sur les droits humains, la liberté religieuse
+            et la préservation de la culture tibétaine.
+          </li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Culture et spiritualité</h2>
+        <p>
+          La culture tibétaine est marquée par les monastères, les pratiques
+          méditatives, les chants, les danses, les thangkas (peintures
+          religieuses) et les mandalas.
+        </p>
+        <p>
+          Les drapeaux de prières colorés, souvent visibles dans les montagnes,
+          symbolisent des souhaits de paix, de compassion et de sagesse.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Situation actuelle (vue générale)</h2>
+        <p>
+          Des organisations internationales publient des rapports sur la
+          situation des droits humains au Tibet. Les sujets abordés incluent
+          la liberté d’expression, la liberté religieuse, la protection de la
+          culture et les conditions de vie.
+        </p>
+        <p>
+          Les points de vue politiques peuvent être différents selon les
+          acteurs (gouvernements, ONG, communautés tibétaines, chercheurs).
+          Ce site encourage la consultation de sources variées et la réflexion
+          critique.
+        </p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>Free Tibet – Site informatif et militant, basé sur des sources publiques.</p>
+  <footer class="site-footer">
+    <p>
+      Free Tibet – Page historique simplifiée, basée sur des sources publiques.
+    </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
