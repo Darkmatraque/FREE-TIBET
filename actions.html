@@ -4,67 +4,157 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Free Tibet – Agir</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="about.html">Histoire</a>
-      <a href="actions.html" class="active">Agir</a>
-      <a href="resources.html">Ressources</a>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-mark">༄</span>
+        <span class="logo-text">Free Tibet</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">Histoire</a>
+        <a href="actions.html" class="active">Agir</a>
+        <a href="resources.html">Ressources</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Changer de thème">☀︎</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        ☰
+      </button>
+    </div>
   </header>
 
-  <main class="page">
-    <h1>Comment agir pour le Tibet</h1>
-
-    <section class="cards">
-      <article class="card">
-        <h2>S’informer</h2>
+  <main>
+    <section class="section">
+      <div class="section-header">
+        <h1>Comment agir pour le Tibet</h1>
         <p>
-          Lire des rapports, des articles et des analyses de sources fiables
-          pour comprendre la situation actuelle au Tibet.
+          Il existe différentes façons de soutenir la défense des droits humains
+          et la préservation de la culture tibétaine, dans le respect et la
+          non-violence.
         </p>
-      </article>
+      </div>
 
-      <article class="card">
-        <h2>Soutenir des ONG</h2>
-        <p>
-          Faire des dons ou devenir bénévole auprès d’organisations qui
-          défendent les droits humains et la liberté religieuse.
-        </p>
-      </article>
+      <div class="grid-3">
+        <article class="card">
+          <h2>S’informer</h2>
+          <p>
+            Lire des rapports, des articles et des analyses de sources fiables
+            (ONG, institutions internationales, chercheurs) pour comprendre la
+            situation actuelle.
+          </p>
+          <a href="resources.html" class="btn ghost">Voir les ressources</a>
+        </article>
 
-      <article class="card">
-        <h2>Participer à des événements</h2>
-        <p>
-          Rejoindre des manifestations pacifiques, conférences ou campagnes
-          de sensibilisation organisées localement ou en ligne.
-        </p>
-      </article>
+        <article class="card">
+          <h2>Soutenir des organisations</h2>
+          <p>
+            Certaines ONG et associations travaillent sur les droits humains,
+            la liberté religieuse et la préservation culturelle. Il est
+            possible de les soutenir financièrement ou bénévolement.
+          </p>
+          <p class="note">
+            Vérifie toujours la transparence et la crédibilité des
+            organisations que tu souhaites soutenir.
+          </p>
+        </article>
 
-      <article class="card">
-        <h2>Partager l’information</h2>
-        <p>
-          Utiliser les réseaux sociaux pour partager des ressources sérieuses
-          et encourager un débat respectueux et informé.
-        </p>
-      </article>
+        <article class="card">
+          <h2>Participer à des événements</h2>
+          <p>
+            Des conférences, manifestations pacifiques, projections de
+            documentaires et rencontres culturelles sont parfois organisées
+            par des associations tibétaines ou des groupes de soutien.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Rester dans le respect</h2>
-      <p>
-        Toute action doit rester non violente, sans propos haineux ni
-        discrimination. L’objectif est la défense des droits humains,
-        pas la haine envers un peuple ou une communauté.
-      </p>
+    <section class="section" id="evenements">
+      <div class="section-header">
+        <h2>Idées d’actions</h2>
+        <p>
+          Voici quelques idées d’actions possibles, à adapter selon ton
+          contexte local et en respectant les lois en vigueur.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <h3>Organisation de projections</h3>
+          <p>
+            Organiser une projection de documentaire sur le Tibet, suivie
+            d’un débat, peut aider à sensibiliser ton entourage.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Ateliers culturels</h3>
+          <p>
+            Proposer des ateliers sur la culture tibétaine (musique, cuisine,
+            art, langue) en collaboration avec des personnes concernées.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Campagnes en ligne</h3>
+          <p>
+            Créer des campagnes de sensibilisation sur les réseaux sociaux,
+            en partageant des ressources sérieuses et en évitant les propos
+            haineux ou discriminatoires.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Participation à des événements existants</h3>
+          <p>
+            Rejoindre des événements organisés par des associations tibétaines
+            ou des groupes de soutien, en respectant leurs consignes.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>
+          Tu peux ajouter ici une adresse e-mail ou un formulaire pour que les
+          personnes intéressées puissent te contacter.
+        </p>
+      </div>
+
+      <form class="card form">
+        <div class="form-row">
+          <label for="name">Nom</label>
+          <input id="name" type="text" placeholder="Ton nom" />
+        </div>
+        <div class="form-row">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="ton.email@example.com" />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Ton message, tes idées, tes questions..."></textarea>
+        </div>
+        <button type="submit" class="btn primary" disabled>
+          Envoyer (exemple – à connecter côté serveur)
+        </button>
+        <p class="note">
+          Ce formulaire est un exemple statique. Pour qu’il envoie réellement
+          des messages, il faudra le connecter à un service (form backend,
+          e-mail, etc.).
+        </p>
+      </form>
     </section>
   </main>
 
-  <footer>
-    <p>Free Tibet – Agir de manière pacifique et informée.</p>
+  <footer class="site-footer">
+    <p>
+      Free Tibet – Agir de manière pacifique, informée et respectueuse.
+    </p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
